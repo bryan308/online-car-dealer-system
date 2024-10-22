@@ -44,7 +44,6 @@ if (!$result) {
     <div class="page-title">
         <h1>Your Bought Cars</h1>
     </div>
-
     <main>
         <div class="container-xl p-2 pb-4 h-100 w-75 shadow-sm rounded-4 border">
             <table>
@@ -67,7 +66,6 @@ if (!$result) {
             </table>
         </div>
     </main>
-
     <?php
     $stmt->close();
     $conn->close();

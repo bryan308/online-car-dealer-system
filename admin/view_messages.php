@@ -81,10 +81,10 @@ if (isset($_POST['delete'], $_POST['message_id'])) {
 </head>
 
 <body>
-    <div class="breadcrumbs">
-        <a href="admin_dashboard.php">Dashboard</a> > <span>Messages</span>
+    <div style="font-size: 0.875rem;">
+        <a href="admin_dashboard.php" class="text-decoration-none text-dark me-1">Dashboard</a> > <span class="ms-1">Messages</span>
     </div>
-    <h1>Customer Messages</h1>
+    <h1 class="my-3 fs-2 fw-bold">Customer Messages</h1>
     <div class="page-action">
         <a href="admin_dashboard.php">&larr; Dashboard</a>
     </div>
@@ -99,7 +99,6 @@ if (isset($_POST['delete'], $_POST['message_id'])) {
     }
     ?>
 
-    <!-- <table class="table table-bordered"> -->
     <div class="table-container">
         <table>
             <thead>
@@ -123,13 +122,10 @@ if (isset($_POST['delete'], $_POST['message_id'])) {
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#responseModal<?php echo $row['id']; ?>">
                                 Respond
                             </button>
-
                             <form method="post" action="" style="display:inline;">
                                 <input type="hidden" name="message_id" value="<?php echo $row['id']; ?>">
                                 <button type="submit" name="delete" class="btn btn-danger">Delete</button>
                             </form>
-
-                            <!-- Reply Modal -->
                             <div class="modal fade" id="responseModal<?php echo $row['id']; ?>" tabindex="-1" aria-labelledby="responseModalLabel<?php echo $row['id']; ?>" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">

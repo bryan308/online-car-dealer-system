@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/admin-styles/inventory.css">
+    <link rel="stylesheet" href="../assets/admin-styles/admin-global.css">
 
     <title>Edit Car</title>
 </head>
@@ -60,29 +60,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="inventory.php">Inventory</a>
     </div>
     <main>
-
         <form method="POST" action="edit_car.php?car_id=<?php echo $car_id; ?>">
             <div class="form-group">
                 <label for="make">Make</label>
                 <input type="text" name="make" id="make" value="<?php echo $make; ?>" placeholder="Make" required />
             </div>
             <div class="form-group">
-                <input type="text" name="model" value="<?php echo $model; ?>" placeholder="Model" required /><br>
+                <label for="model">Model</label>
+                <input type="text" id="model" name="model" value="<?php echo $model; ?>" placeholder="Model" required />
             </div>
             <div class="form-group">
-                <input type="number" name="year" value="<?php echo $year; ?>" placeholder="Year" required /><br>
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year" value="<?php echo $year; ?>" placeholder="Year" required />
             </div>
             <div class="form-group">
-                <input type="number" name="price" value="<?php echo $price; ?>" placeholder="Price" required /><br>
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" value="<?php echo $price; ?>" placeholder="Price" required />
             </div>
-
-            <!-- Checkbox for availability -->
             <label>
                 <input type="checkbox" name="availability" <?php echo $availability ? 'checked' : ''; ?> />
                 Available
             </label>
-            <br>
-
             <button type="submit">Update Car</button>
         </form>
     </main>

@@ -28,12 +28,11 @@ if (!$result) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/admin-styles/inventory.css">
+    <link rel="stylesheet" href="../assets/admin-styles/admin-global.css">
     <title>All Transactions - Admin Dashboard</title>
 </head>
 
 <body>
-
     <div class="breadcrumbs">
         <a href="admin_dashboard.php">Dashboard</a> > <span>Purchases</span>
     </div>

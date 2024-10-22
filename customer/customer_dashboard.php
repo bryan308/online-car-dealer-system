@@ -31,7 +31,7 @@ $stmt->close();
 </head>
 
 <body>
-    <?php renderHeader($customer_name); ?>
+    <?php renderHeader(); ?>
     <div class="dashboard-container">
         <h1>Welcome, <?php echo htmlspecialchars($customer_name); ?>!</h1>
 

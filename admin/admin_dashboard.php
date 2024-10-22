@@ -20,8 +20,6 @@ require '../db_connect.php';
 </head>
 
 <body>
-
-    <!-- TODO add bacground design -->
     <h1>Admin Dashboard</h1>
     <main>
         <div class="dashboard">
@@ -37,21 +35,10 @@ require '../db_connect.php';
                         Add a new car to the inventory.
                     </p>
                 </a>
-                <!-- <a href="edit_car.php">
-                    <div class="card-header">
-                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                            <path d='M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19.5 3 21l1.5-4L16.5 3.5z' />
-                        </svg>
-                        <h4 class="title">Edit Car</h4>
-                    </div>
-                    <p class="description">
-                        Edit details of an existing car.
-                    </p>
-                </a> -->
                 <a href="inventory.php">
                     <div class="card-header">
                         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                            <path d='M3 3h18v18H3V3zm3 3h12v12H6V6z' />
+                            <path d='M9 3.5v17m11.5-11h-17M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6z' />
                         </svg>
                         <h4 class="title">Inventory</h4>
                     </div>
@@ -73,7 +60,7 @@ require '../db_connect.php';
                 <a href="admin_transactions.php">
                     <div class="card-header">
                         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                            <path d='M3 3h18v18H3V3zm3 3h12v12H6V6z' />
+                            <path d='M10.5 10h4m-2-2v4m4 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M3.71 5.4h15.214c1.378 0 2.373 1.27 1.995 2.548l-1.654 5.6C19.01 14.408 18.196 15 17.27 15H8.112c-.927 0-1.742-.593-1.996-1.452zm0 0L3 3' />
                         </svg>
                         <h4 class="title">View All Purchases</h4>
                     </div>
@@ -81,7 +68,6 @@ require '../db_connect.php';
                         View and manage all purchase transactions.
                     </p>
                 </a>
-
             </div>
         </div>
     </main>

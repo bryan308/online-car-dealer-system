@@ -1,9 +1,8 @@
 @import url("./global.css");
 
 .table-container {
-	/* margin: 0 auto; */
-	margin: 0 1rem;
-	/* width: 80%; */
+	margin: 0 auto;
+	width: 80%;
 	max-height: 400px;
 	overflow-y: auto;
 	display: block;
@@ -18,9 +17,7 @@ table,
 tr,
 th,
 td {
-	/* border-radius: var(--radius); */
 	border: none;
-	/* border: 1px solid rgba(var(--border)); */
 	border-collapse: collapse;
 }
 
@@ -29,7 +26,6 @@ tr {
 }
 
 thead {
-	/* border-radius: var(--radius); */
 	background-color: rgba(var(--foreground));
 	color: rgba(var(--background));
 	position: sticky;

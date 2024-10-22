@@ -45,7 +45,6 @@ $result = $stmt->get_result();
         <h1>Your Messages and Admin Replies</h1>
     </div>
     <main>
-
         <div class="container-xl p-2 pb-4 h-100 w-75 shadow-sm rounded-4 border">
             <table border="1">
                 <thead>
